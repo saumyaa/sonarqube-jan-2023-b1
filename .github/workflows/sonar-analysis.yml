@@ -18,7 +18,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn clean verify sonar:sonar -Dsonar.projectKey=sonarqube-jan-2023-b1 -Dsonar.host.url=http://172.31.11.1:9000 -Dsonar.login=sqp_22a30e92aa0ed471199dcec02ef5a8c69c74a16d
+      run: mvn clean verify sonar:sonar -Dsonar.projectKey=sonarqube-jan-2023-b1 -Dsonar.host.url=http://65.1.26.225:9000 -Dsonar.login=sqp_22a30e92aa0ed471199dcec02ef5a8c69c74a16d
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
       uses: advanced-security/maven-dependency-submission-action@571e99aab1055c2e71a1e2309b9691de18d6b7d6
